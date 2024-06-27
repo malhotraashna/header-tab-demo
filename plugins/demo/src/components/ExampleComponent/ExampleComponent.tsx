@@ -5,7 +5,7 @@ import { Route, Routes } from 'react-router';
 
 const tabs = [
   { label: 'Services', path: '' },
-  { label: 'Runs', path: 'runs' },
+  { label: 'Results', path: 'results' },
   { label: 'Scenarios', path: 'scenarios' },
 ];
 
@@ -58,6 +58,7 @@ export const ScenarioPage = () => (
 export const ResultsPage = () => (
   <Page themeId="tool">
     <PluginHeader />
+    <PageTabs selectedIndex={1} />
     <Content>
       <Grid container spacing={3} direction="column">
         <Grid item>
